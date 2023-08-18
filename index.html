@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="w-fit mx-auto my-10 text-[#31A5AC] font-bold text-4xl">Money Master💰</h1>
+    </header>
+    <main class="w-[95%] mx-auto grid grid-cols-2 gap-4 h-fit mb-8">
+        <div class="h-[600px] bg-red-100">
+            <img class="h-full w-full" src="./img/money_master_bg.png" alt="Money Master">
+        </div>
+        <div class="text-center p-8">
+            <h2 class="font-bold text-lg my-4">Income</h2>
+            <label for="income">
+                Income: <input id="income" class="bg-[#DCDCDC] w-32 my-2 py-1 px-4 rounded-sm" type="text">
+            </label> <br>
+            <p class="font-bold text-lg my-4">Expenses</p>
+            <label for="food">
+                Food: <input id="food" class="bg-[#DCDCDC] py-1 px-4 w-32 my-2 rounded-sm" type="text">
+            </label><br>
+            <label for="rent">
+                Rent: <input id="rent" class="bg-[#DCDCDC] w-32 py-1 px-4 my-2 rounded-sm" type="text">
+            </label><br>
+            <label for="clothes">
+                Clothes: <input id="clothes" class="bg-[#DCDCDC] w-32 py-1 px-4 my-2 rounded-sm" type="text">
+            </label><br>
+            <button id="cal-btn" class="w-28 rounded-sm my-2 font-medium px-2 py-1 text-white bg-[#59A5FF]">Calculate</button>
+            <p class="font-bold text-base my-2">Total Expenses: <span id="totalExpenses"></span></p>
+            <p class="font-bold text-base my-2">Balance: <span id="balance"></span></p>
+            <label for="saving">
+                Save: <input id="save" class="bg-[#DCDCDC] py-1 px-4 w-24 my-2 rounded-sm" type="text"> %
+            </label>
+            <button id="save-btn" class="w-16 px-2 py-1 bg-[#59A5FF] text-white font-medium rounded-sm">Save</button>
+            <p class="my-2 font-medium">Saving Amount: <span id="savingAmount"></span></p>
+            <p class="my-2 font-medium">Reaming Balance: <span id="reamingBalance"></span></p>
+        </div>
+    </main>
+    <script src="./src/index.js"></script>
+</body>
+</html>
